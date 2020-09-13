@@ -30,10 +30,20 @@
 				</nav>
 				<ul class="contacts">
 					<li class="contacts-item">
-						<a href="mailto:info@devstudio.com" class="link"><span class="contact-to">info@devstudio.com</span></a>
+						<a href="mailto:info@devstudio.com" class="link">
+							<svg class="mail-icon">
+								<use href="./images/symbol-defs.svg#svg-envelope"></use>
+							</svg>
+							<span class="contact-to">info@devstudio.com</span>
+						</a>
 					</li>
 					<li class="contacts-item">
-						<a href="tel:+380961111111" class="link"><span class="contact-to">+38 096 111 11 11</span></a>
+						<a href="tel:+380961111111" class="link">
+							<svg class="phone-icon">
+								<use href="./images/symbol-defs.svg#svg-Vector"></use>
+							</svg>
+							<span class="contact-to">+38 096 111 11 11</span>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -41,7 +51,7 @@
 		<!--Projects-->
 		<main>
 			<!--<h1>Portfoloi</h1>-->
-			<section>
+			<section class="portfolio">
 				<div class="container">
 					<ul class="filters">
 						<li class="filter-list">
@@ -54,13 +64,19 @@
 					</ul>
 					<ul class="projects">
 						<li class="project-card">
-							<a>
+							<div class="box">
 								<img class="project-img" src="./images/tech.jpg" width="370" alt="изображение проекта" />
-								<div class="card-text">
-									<h2 class="project-title">Технокряк</h2>
-									<p class="project-type">Веб-сайт</p>
+								<div class="overlay">
+									<p>
+										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+										для цифрового шпионажа и атак на защищённые сервера конкурентов.
+									</p>
 								</div>
-							</a>
+							</div>
+							<div class="card-text">
+								<h2 class="project-title">Технокряк</h2>
+								<p class="project-type">Веб-сайт</p>
+							</div>
 						</li>
 						<li class="project-card">
 							<a>
@@ -159,28 +175,28 @@
 						<li class="social-icon-item">
 							<a href="https://www.instagram.com/" class="link social-link">
 								<svg class="social-icon">
-									<use href="./images/symbol-defs.svg#svg-instagram-21"></use>
+									<use href="./images/symbol-defs.svg#svg-instagram-2"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="social-icon-item">
 							<a href="https://twitter.com/" class="link social-link">
 								<svg class="social-icon">
-									<use href="./images/symbol-defs.svg#svg-twitter-11"></use>
+									<use href="./images/symbol-defs.svg#svg-twitter-1"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="social-icon-item">
 							<a href="https://www.facebook.com/" class="link social-link">
 								<svg class="social-icon">
-									<use href="./images/symbol-defs.svg#svg-facebook-11"></use>
+									<use href="./images/symbol-defs.svg#svg-facebook-1"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="social-icon-item">
 							<a href="https://www.linkedin.com/" class="link social-link">
 								<svg class="social-icon">
-									<use href="./images/symbol-defs.svg#svg-linkedin-11"></use>
+									<use href="./images/symbol-defs.svg#svg-linkedin-1"></use>
 								</svg>
 							</a>
 						</li>
