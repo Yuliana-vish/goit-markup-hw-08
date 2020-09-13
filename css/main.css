@@ -32,22 +32,17 @@ body {
 	font-size: 16px;
 	margin: 0 auto;
 }
-
 .container {
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
 }
-
 ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
-}
-li {
-	display: inline-block;
 }
 img {
 	display: block;
@@ -59,15 +54,14 @@ a {
 }
 
 /*header*/
-/*header {
-	border: 1px solid #ececec;
-}*/
+
 .page-head .container {
-	width: 1230px;
 	display: flex;
 	align-items: center;
 }
-
+.page-head {
+	border-bottom: 1px solid #ececec;
+}
 .logo {
 	font-family: Raleway;
 	color: var(--title-text-color);
@@ -93,8 +87,6 @@ a {
 	font-size: 14px;
 	line-height: 1.1;
 	letter-spacing: 0.02em;
-	padding-top: 32px;
-	padding-bottom: 32px;
 }
 .menu-item .item:not(:last-child) {
 	margin-right: 50px;
@@ -102,6 +94,7 @@ a {
 .link {
 	text-decoration: none;
 	display: block;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-item .link {
 	color: var(--title-text-color);
@@ -115,6 +108,25 @@ a {
 }
 /*contacts*/
 
+.mail-icon {
+	width: 16px;
+	height: 12px;
+	vertical-align: middle;
+	align-items: center;
+	fill: var(--primary-text-color);
+	margin-right: 10px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.phone-icon {
+	width: 10px;
+	height: 16px;
+	vertical-align: middle;
+	align-items: center;
+	fill: var(--primary-text-color);
+	margin-right: 10px;
+	margin-left: 30px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .contacts .link {
 	color: var(--primary-text-color);
 }
@@ -122,12 +134,14 @@ a {
 .contacts-item .link:focus {
 	color: var(--accent-color);
 }
-.contacts-item {
-	padding-top: 32px;
-	padding-bottom: 32px;
+.link:hover .mail-icon,
+.link:focus .mail-icon {
+	fill: var(--accent-color);
 }
-.contacts-item:not(:last-child) {
-	margin-right: 50px;
+
+.link:hover .phone-icon,
+.link:focus .phone-icon {
+	fill: var(--accent-color);
 }
 
 /* hero */
@@ -147,7 +161,6 @@ a {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
 .hero-title {
 	color: var(--primary-white-color);
 	font-weight: 900;
@@ -231,7 +244,6 @@ a {
 .section-work {
 	padding-bottom: 94px;
 }
-
 .work-title {
 	color: var(--title-text-color);
 	font-weight: 700;
@@ -247,17 +259,37 @@ a {
 	flex: wrap;
 	margin: 0 auto;
 }
-.img-work {
+.thumb {
+	position: relative;
 	width: calc((100% - 2 * 30px) / 3);
 	margin-right: 30px;
 }
-.img-work:first-child {
+
+.thumb:first-child {
 	margin-left: 0;
 }
-.img-work:last-child {
+.thumb:last-child {
 	margin-right: 0;
 }
-
+.label {
+	margin: 0;
+	background: rgba(47, 48, 58, 0.8);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primary-white-color);
+	padding-top: 27px;
+	padding-bottom: 27px;
+}
+.thumb > .label {
+	position: absolute;
+	top: 224px;
+	right: 0;
+	margin: 0;
+}
 /* team */
 
 .section-team {
@@ -290,7 +322,6 @@ a {
 .team-card:last-child {
 	margin-right: 0;
 }
-
 .name-title {
 	color: var(--title-text-color);
 	font-weight: 500;
@@ -304,7 +335,6 @@ a {
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
-
 .team-social-icon-list {
 	display: flex;
 	justify-content: center;
@@ -327,12 +357,12 @@ a {
 	border-radius: 50%;
 	background-position: center;
 	background-size: contain;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-link:hover,
 .team-social-link:focus {
 	background-color: var(--accent-color);
 }
-
 .team-social-link:hover .team-social-icon {
 	fill: var(--primary-white-color);
 }
@@ -366,7 +396,6 @@ a {
 .users-card:not(:last-child) {
 	margin-right: 30px;
 }
-
 .users-link {
 	display: flex;
 	justify-content: center;
@@ -379,6 +408,7 @@ a {
 	background-size: contain;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .users-link:hover .users-icon {
 	fill: var(--accent-color);
@@ -391,15 +421,18 @@ a {
 }
 
 /*portfolio*/
-
+.portfolio {
+	padding-top: 94px;
+}
 .filters {
 	display: flex;
 	justify-content: center;
-	padding-top: 94px;
+	align-items: center;
 }
 .filter-list {
 	margin-right: 8px;
 	margin-bottom: 50px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-list:last-child {
 	margin-right: 0;
@@ -419,7 +452,6 @@ button {
 	padding: 6px 22px;
 	cursor: pointer;
 }
-
 .filter-list button:hover,
 .filter-list button:focus {
 	color: var(--primary-white-color);
@@ -429,17 +461,48 @@ button {
 }
 
 /*projects*/
-.projects {
-	display: flex;
-	flex: wrap;
-	padding-bottom: 94px;
+.box {
+	position: relative;
+	width: 370px;
+	height: 294px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+.overlay {
+	position: absolute;
+	background: rgba(33, 150, 243, 0.9);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translatey(100%);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.overlay > p {
+	color: var(--primary-white-color);
+	padding: 63px 24px;
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.56;
+	letter-spacing: 0.03em;
+}
+.box:hover .overlay {
+	transform: translatey(0);
+}
+
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 94px;
+}
 .project-card {
 	width: calc((100% - 2 * 30px) / 3);
 	margin-right: 30px;
 	margin-bottom: 30px;
 	border: 1px solid #eeeeee;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card:hover,
 .project-card:focus {
@@ -455,7 +518,9 @@ button {
 	margin-bottom: 0;
 }
 .card-text {
-	padding: 20px 24px 20px 24px;
+	display: block;
+	padding-left: 24px;
+	margin-top: 20px;
 }
 .project-title {
 	color: var(--title-text-color);
@@ -465,24 +530,24 @@ button {
 	letter-spacing: 0.06em;
 	text-align: left;
 	margin: 0;
+	margin-bottom: 4px;
 }
 .project-type {
 	line-height: 1.87;
 	letter-spacing: 0.03em;
 	text-align: left;
 	margin: 0;
+	margin-bottom: 20px;
 }
 /*footer*/
 .flexbox {
 	display: flex;
 }
-
 footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background: var(--section-bacground-color);
 }
-
 address {
 	display: block;
 	font-size: 14px;
@@ -502,8 +567,7 @@ address {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-/*.social-contact {
-}*/
+/*social-contact*/
 
 .invitation-title {
 	font-family: Roboto;
@@ -515,7 +579,6 @@ address {
 	margin: 0;
 	margin-top: 15px;
 }
-
 .social-icon-list {
 	display: flex;
 	justify-content: center;
@@ -538,11 +601,11 @@ address {
 	border-radius: 50%;
 	background-position: center;
 	background-size: contain;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover {
 	background-color: var(--accent-color);
 }
-
 .social-icon {
 	width: 20px;
 	height: 20px;
