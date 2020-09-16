@@ -360,7 +360,7 @@ a {
 	border-radius: 50%;
 	background-position: center;
 	background-size: contain;
-	transition: bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	fill: #afb1b8;
 }
 .team-social-link:hover,
@@ -453,6 +453,7 @@ button {
 	text-decoration: none;
 	padding: 6px 22px;
 	cursor: pointer;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-list button:hover,
 .filter-list button:focus {
@@ -540,6 +541,9 @@ button {
 	text-align: left;
 	margin: 0;
 }
+.project-card a {
+	width: 100%;
+}
 /*footer*/
 footer {
 	background: var(--section-bacground-color);
@@ -623,6 +627,7 @@ address .link {
 	border-radius: 50%;
 	background-position: center;
 	background-size: contain;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover {
 	background-color: var(--accent-color);
@@ -722,7 +727,6 @@ address .link {
 	border-radius: 4px;
 	opacity: 1;
 	cursor: pointer;
-	padding: 40px;
 }
 .btn-closed {
 	position: absolute;
@@ -735,12 +739,22 @@ address .link {
 	top: 8px;
 	background: var(--primary-white-color);
 	border: 1px solid rgba(0, 0, 0, 0.1);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close {
 	width: 11px;
 	height: 11px;
 }
+.btn-closed:hover,
+.btn-closed:focus {
+	fill: var(--accent-color);
+}
 /*form*/
+.form {
+	width: 528px;
+	padding: 40px;
+	margin: 0 auto;
+}
 .form-title {
 	font-weight: 700;
 	font-size: 20px;
@@ -752,6 +766,8 @@ address .link {
 	margin-bottom: 12px;
 }
 .form-field {
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	margin: 0;
 }
@@ -766,61 +782,100 @@ address .link {
 }
 .form-input {
 	position: relative;
-	display: inline-block;
-	margin: 0;
 	width: 448px;
 	height: 40px;
+	margin: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	background: var(--primary-white-color);
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	margin-bottom: 10px;
 	cursor: pointer;
 	padding-left: 42px;
+	font-size: 16px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-input:hover,
+.form-input:focus {
+	border-color: var(--accent-color);
+}
+
+.form-input:hover + .input-icon,
+.form-input:focus + .input-icon {
+	fill: var(--accent-color);
+}
+
 .input-icon {
 	position: absolute;
-	content: "";
 	width: 15px;
 	height: 15px;
 	top: 50%;
 	transform: translateY(-50%);
 	left: 12px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-field input::placeholder {
+	font-size: 12px;
+	line-height: 1.2;
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
+}
 .comment {
 	width: 448px;
 	height: 120px;
 	padding-top: 12px;
 	padding-left: 16px;
 }
-.comment::placeholder {
-	font-size: 12px;
-	line-height: 1.2;
-	letter-spacing: 0.01em;
-	color: rgba(117, 117, 117, 0.5);
-}
-
 .form-checkbox {
-	margin: 0;
+	margin: 0 auto;
 	margin-bottom: 30px;
-	margin-left: 12px;
-	cursor: pointer;
 }
 .checkbox {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.lable {
+	display: inline-block;
+	/*align-items: center;*/
 	margin: 0;
 }
+.icon {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 9px;
+	border: 2px solid #212121;
+	border-radius: 2px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox:checked + .icon {
+	border-color: var(--accent-color);
+	background-color: var(--accent-color);
+	background-image: url("../images/icon/check-mark.svg");
+	background-size: contain;
+	background-origin: border-box;
+}
 .agreement {
+	cursor: pointer;
 	font-size: 14px;
 	line-height: 1.7;
 	letter-spacing: 0.03em;
 	color: var(--primary-text-color);
 }
 .agr-link {
+	text-decoration: underline;
 	color: var(--accent-color);
 }
 .btn-submit {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
 	margin-bottom: 40px;
@@ -837,4 +892,5 @@ address .link {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	cursor: pointer;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
