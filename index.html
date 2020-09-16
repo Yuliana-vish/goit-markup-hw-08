@@ -353,7 +353,7 @@
 					</ul>
 				</div>
 				<div class="subscription">
-					<form class="footer-form">
+					<form class="footer-form" autocomplete="off">
 						<h2 class="sbr-title">Подпишитесь на рассылку<h2>
 								<input type="footer-email" class="footer-form-input" name="mail" placeholder="E-mail" />
 								<button type="submit" class="footer-btn">Подписаться
@@ -372,8 +372,9 @@
 						<use href="./images/symbol-defs.svg#svg-close"></use>
 					</svg>
 				</button>
-				<form class="form">
-					<p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+				<form class="form"  autocomplete="off">
+					
+					<b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
 					<div class="form-field">
 						<label class="form-label">Имя</label>
 						<input type="text" class="form-input" name="name" />
@@ -395,17 +396,19 @@
 					</div>
 					<div class="form-field">
 						<label class="form-label">Комментарий</label>
-						<input type="text" class="form-input comment" name="text" placeholder="Введите текст" />
+						<input type="textarea" class="form-input comment" name="comment" id="comment" placeholder="Введите текст" />
 					</div>
 					<div class="form-checkbox">
+						<label class="lable">
 						<input class="checkbox" type="checkbox" name="checkbox" />
-						<label class="agreement">
-							Соглашаюсь с рассылкой и принимаю
-							<a class="agr-link" href="">Условия договора</a>
+						<span class="icon"></span>
+						<span class="agreement">Соглашаюсь с рассылкой и принимаю
+							<span class="agr-link">Условия договора</span></span>
 						</label>
 					</div>
 					<button class="btn-submit" type="submit">Отправить</button>
 				</form>
+		
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
