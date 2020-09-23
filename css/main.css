@@ -768,6 +768,7 @@ address .link {
 .btn-closed:focus {
 	fill: var(--accent-color);
 }
+
 /*form*/
 .form {
 	width: 528px;
@@ -787,8 +788,9 @@ address .link {
 	margin-bottom: 12px;
 }
 .form-field {
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
+	justify-content: flex-start;*/
 	position: relative;
 	margin: 0;
 }
