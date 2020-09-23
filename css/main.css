@@ -630,7 +630,6 @@ address .link {
 .social-icon-list {
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
 }
 
 .social-icon-item:not(:last-child) {
