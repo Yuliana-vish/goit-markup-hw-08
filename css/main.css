@@ -857,6 +857,7 @@ address .link {
 	height: 120px;
 	padding: 12px 16px;
 	margin-bottom: 0;
+	resize: none;
 }
 .form-checkbox {
 	display: flex;
