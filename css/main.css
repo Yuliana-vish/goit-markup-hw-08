@@ -558,6 +558,7 @@ button {
 	letter-spacing: 0.03em;
 	text-align: left;
 	margin: 0;
+	color: var(--primary-text-color);
 }
 .project-card a {
 	width: 100%;
