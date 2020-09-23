@@ -564,16 +564,17 @@ button {
 }
 /*footer*/
 footer {
+	padding-bottom: 60px;
+	padding-top: 60px;
 	background: var(--section-bacground-color);
 }
 .flexbox {
 	display: flex;
+	align-items: baseline;
 }
 .footer-contact {
 	margin: 0;
-	margin-top: 60px;
 	margin-right: 70px;
-	margin-bottom: 60px;
 }
 .logo-footer {
 	font-family: Raleway;
@@ -612,7 +613,6 @@ address .link {
 
 /*social-contact*/
 .social-contact {
-	margin-top: 72px;
 	margin-right: 93px;
 }
 .invitation-title,
@@ -659,7 +659,6 @@ address .link {
 
 /*footer-form*/
 .subscription {
-	margin-top: 72px;
 }
 .footer-form p {
 	margin-bottom: 20px;
