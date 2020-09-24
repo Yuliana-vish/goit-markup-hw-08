@@ -532,7 +532,7 @@ button {
 	border: 1px solid #eeeeee;
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project__card .project_card-link:hover .overlay {
+.project__card .project__card-link:hover .overlay {
 	transform: translatey(0);
 }
 .project__card:hover,
@@ -569,11 +569,11 @@ button {
 	margin: 0;
 	color: var(--primary-text-color);
 }
-.project_card-link {
+.project__card-link {
 	width: 100%;
 }
 /*footer*/
-footer {
+.footer {
 	padding-bottom: 60px;
 	padding-top: 60px;
 	background: var(--section-bacground-color);
@@ -582,11 +582,11 @@ footer {
 	display: flex;
 	align-items: baseline;
 }
-.footer-contact {
+.footer__contact {
 	margin: 0;
 	margin-right: 70px;
 }
-.logo-footer {
+.footer__logo {
 	font-family: Raleway;
 	color: var(--title-text-color);
 	font-weight: 700;
@@ -594,7 +594,7 @@ footer {
 	line-height: 1.2;
 	text-decoration: none;
 }
-.logo-title-footer {
+.footer__logo-title {
 	color: var(--accent-color);
 	font-weight: 700;
 	font-size: 26px;
@@ -610,23 +610,23 @@ address {
 	text-decoration: none;
 	margin-top: 20px;
 }
-address .link {
+address .contact-link {
 	margin-top: 9px;
 }
-.logo-footer,
-.address {
+.footer__logo,
+.footer__address {
 	color: var(--primary-white-color);
 }
-.address .contact-item {
+.footer__address .contact-item {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-/*social-contact*/
-.social-contact {
+/*footer__social-contact*/
+.footer__social-contact {
 	margin-right: 93px;
 }
-.invitation-title,
-.sbr-title {
+.invitation,
+.sbr {
 	font-family: Roboto;
 	font-weight: 700;
 	font-size: 14px;
@@ -636,15 +636,15 @@ address .link {
 	margin: 0;
 	margin-bottom: 20px;
 }
-.social-icon-list {
+.footer__social-icon-list {
 	display: flex;
 	justify-content: center;
 }
 
-.social-icon-item:not(:last-child) {
+.footer__social-icon-item:not(:last-child) {
 	margin-right: 10px;
 }
-.social-link {
+.footer__social-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -657,21 +657,21 @@ address .link {
 	background-size: contain;
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:hover {
+.footer__social-link:hover {
 	background-color: var(--accent-color);
 }
-.social-icon {
+.footer__social-icon {
 	width: 20px;
 	height: 20px;
 	fill: #ffffff;
 }
 
-/*footer-form*/
-.footer-form p {
+/*footer__form*/
+.footer__form p {
 	margin-bottom: 20px;
 	margin: 0;
 }
-.footer-form {
+.footer__form {
 	font-family: Roboto;
 	font-weight: 700;
 	font-size: 14px;
@@ -680,7 +680,7 @@ address .link {
 	text-transform: uppercase;
 }
 
-.footer-form-input {
+.footer__form-input {
 	width: 358px;
 	height: 50px;
 	background: var(--section-bacground-color);
@@ -695,7 +695,7 @@ address .link {
 	padding-bottom: 15px;
 	padding-left: 16px;
 }
-.footer-btn {
+.footer__btn {
 	position: absolute;
 	content: "";
 	width: 200px;
