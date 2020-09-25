@@ -1,0 +1,22 @@
+.btn-closed {
+	position: absolute;
+	content: "";
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	right: 8px;
+	top: 8px;
+	background: $primary-white-color;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		fill: $accent-color;
+	}
+}
+.close {
+	width: 11px;
+	height: 11px;
+}
