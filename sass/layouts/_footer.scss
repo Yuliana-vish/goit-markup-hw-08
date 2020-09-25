@@ -1,0 +1,56 @@
+.footer {
+	padding-bottom: 60px;
+	padding-top: 60px;
+	background: $section-bacground-color;
+}
+.flexbox {
+	display: flex;
+	align-items: baseline;
+}
+.footer__contact {
+	margin: 0;
+	margin-right: 70px;
+}
+
+address {
+	display: block;
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	font-style: normal;
+	text-decoration: none;
+	margin-top: 20px;
+}
+address .contact-link {
+	margin-top: 9px;
+}
+.footer__logo,
+.footer__address {
+	color: $primary-white-color;
+}
+.footer__address .contact-item {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/*footer__social-contact*/
+.footer__social-contact {
+	margin-right: 93px;
+}
+
+%placeholder-text {
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.invitation {
+	@extend %placeholder-text;
+}
+.sbr {
+	@extend %placeholder-text;
+}
