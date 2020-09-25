@@ -10,13 +10,13 @@
 		{
 			"format": "compressed",
 			"extensionName": ".min.css",
-			"savePath": "/dist/css"
+			"savePath": "/css/"
 		},
 		// More Complex
 		{
 			"format": "compressed",
 			"extensionName": ".min.css",
-			"savePath": "~/../css/"
+			"savePath": "~/css/"
 		}
 	]
 }
