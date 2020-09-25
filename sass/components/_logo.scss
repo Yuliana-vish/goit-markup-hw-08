@@ -1,6 +1,6 @@
 .logo {
 	font-family: Raleway;
-	color: var(--title-text-color);
+	color: $title-text-color;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.2;
@@ -10,7 +10,7 @@
 	margin-right: 93px;
 }
 .logo__title {
-	color: var(--accent-color);
+	color: $accent-color;
 	font-family: Raleway;
 	padding-top: 24px;
 	padding-bottom: 25px;
