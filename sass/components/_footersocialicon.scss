@@ -1,0 +1,31 @@
+.footer__social-icon-list {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__social-icon-item:not(:last-child) {
+	margin-right: 10px;
+}
+.footer__social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: "";
+	width: 44px;
+	height: 44px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	background-position: center;
+	background-size: contain;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover {
+	background-color: $accent-color;
+}
+}
+.footer__social-icon {
+	width: 20px;
+	height: 20px;
+	fill: #ffffff;
+}
+
