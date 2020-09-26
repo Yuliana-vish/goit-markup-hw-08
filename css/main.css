@@ -905,11 +905,6 @@ a {
   margin-bottom: 0;
 }
 
-.project__card-link:hover .overlay {
-  -webkit-transform: translatey(0);
-          transform: translatey(0);
-}
-
 .project__card-text {
   display: block;
   padding: 20px 24px;
@@ -936,6 +931,11 @@ a {
 
 .project__card-link {
   width: 100%;
+}
+
+.project__card-link:hover .overlay {
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
 }
 
 .box {
@@ -1095,11 +1095,6 @@ button {
   font-family: Raleway;
 }
 
-.footer__form p {
-  margin-bottom: 20px;
-  margin: 0;
-}
-
 .footer__form {
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -1107,6 +1102,11 @@ button {
   line-height: 1.14;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.footer__form p {
+  margin-bottom: 20px;
+  margin: 0;
 }
 
 .footer__form-input {
@@ -1413,6 +1413,15 @@ button {
   overflow: hidden;
 }
 
+.form__input-checkbox:checked + .form__checkbox-icon {
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-image: url("../images/icon/check-mark.svg");
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+}
+
 .form__checkbox-lable {
   margin: 0 auto;
   display: inline-block;
@@ -1448,15 +1457,6 @@ button {
   border-radius: 2px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__input-checkbox:checked + .form__checkbox-icon {
-  border-color: #2196f3;
-  background-color: #2196f3;
-  background-image: url("../images/icon/check-mark.svg");
-  background-size: contain;
-  background-position: center;
-  background-origin: border-box;
 }
 
 .btn-submit {

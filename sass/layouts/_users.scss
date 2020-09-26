@@ -42,8 +42,7 @@
 	&:hover .users__icon {
 		fill: $accent-color;
 	}
-}
-
-.users__link .users__icon {
-	fill: #afb1b8;
+	& .users__icon {
+		fill: #afb1b8;
+	}
 }
