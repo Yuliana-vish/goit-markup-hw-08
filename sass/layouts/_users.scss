@@ -1,4 +1,3 @@
-/*users*/
 .users {
 	color: $title-text-color;
 	font-weight: 700;
@@ -18,9 +17,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.users__card:not(:last-child) {
+
+	&:not(:last-child) {
 	margin-right: 30px;
+}
 }
 .users__link {
 	display: flex;
@@ -35,13 +35,16 @@
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover {
+	border-color: $accent-color;
 }
+}
+
 .users__link:hover .users__icon {
 	fill: $accent-color;
 }
-.users__link:hover {
-	border-color: $accent-color;
-}
+
 .users__icon {
 	fill: #afb1b8;
 }

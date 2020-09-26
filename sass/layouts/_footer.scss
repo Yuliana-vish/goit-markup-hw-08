@@ -12,7 +12,8 @@
 	margin-right: 70px;
 }
 
-address {
+.footer__address {
+	color: $primary-white-color;
 	display: block;
 	margin: 0;
 	font-size: 14px;
@@ -21,25 +22,21 @@ address {
 	font-style: normal;
 	text-decoration: none;
 	margin-top: 20px;
-}
-address .contact-link {
-	margin-top: 9px;
-}
-.footer__logo,
-.footer__address {
-	color: $primary-white-color;
-}
-.footer__address .contact-item {
-	color: rgba(255, 255, 255, 0.6);
+
+	.contact-link {
+		margin-top: 9px;
+	}
+	.contact-item {
+		color: rgba(255, 255, 255, 0.6);
+	}
 }
 
-/*footer__social-contact*/
 .footer__social-contact {
 	margin-right: 93px;
 }
 
 %placeholder-text {
-	font-family: Roboto;
+	font-family: $font-family;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
