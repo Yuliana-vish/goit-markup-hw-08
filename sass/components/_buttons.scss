@@ -1,0 +1,82 @@
+%button-border {
+	border-color: transparent;
+	border-radius: 4px;
+}
+%button-text {
+	font-family: $font-family;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0.03em;
+	text-align: center;
+}
+
+%button-color {
+	background: $accent-color;
+	color: $primary-white-color;
+}
+
+/*hero*/
+.hero__button-link {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 32px;
+	font-weight: 700;
+	line-height: 1.9;
+	text-align: center;
+	letter-spacing: 0.06em;
+	@extend %button-color;
+	@extend %button-border;
+
+	transition: $transition;
+}
+/*footer*/
+.footer__btn {
+	position: absolute;
+	content: "";
+	width: 200px;
+	height: 50px;
+	margin: 0;
+	@extend %button-text;
+	line-height: 1.9;
+	@extend %button-color;
+	@extend %button-border;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	transition: $transition;
+}
+.footer__bth-icon {
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	align-items: center;
+	fill: $primary-white-color;
+	background: $accent-color;
+	margin-left: 10px;
+}
+/*portfolio*/
+
+.filter__button {
+	padding: 6px 22px;
+	color: $title-text-color;
+	background-color: $button-background-color;
+	@extend %button-border;
+	@extend %button-text;
+	text-decoration: none;
+	cursor: pointer;
+	transition: $transition;
+}
+
+/*modal-form*/
+.form__btn-submit {
+	@extend %display-flex;
+	margin: 0 auto;
+	width: 200px;
+	height: 50px;
+	padding: 10px 55px;
+	@extend %button-color;
+	@extend %button-text;
+	@extend %button-border;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: $transition;
+}

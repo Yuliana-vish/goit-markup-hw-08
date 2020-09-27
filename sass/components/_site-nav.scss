@@ -2,10 +2,8 @@
 	margin-right: auto;
 }
 .menu__item {
-	font-weight: 500;
-	font-size: 14px;
+	@extend %text-style-normal;
 	line-height: 1.1;
-	letter-spacing: 0.02em;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	position: relative;

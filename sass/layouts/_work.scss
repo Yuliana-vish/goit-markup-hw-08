@@ -3,14 +3,11 @@
 	text-align: center;
 }
 .work__title {
-	color: $title-text-color;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.2;
-	letter-spacing: 0.03em;
-	text-align: center;
 	margin: 0;
 	margin-bottom: 50px;
+	@extend %text-style-title;
+	line-height: 1.2;
+	text-align: center;
 }
 .work__card {
 	display: flex;
@@ -42,13 +39,10 @@
 	}
 }
 .card__title {
-	display: flex;
-	align-items: center;
+	@extend %display-flex;
 	margin: 0;
-	font-weight: 700;
-	font-size: 14px;
+	@extend %text-style-bold;
 	line-height: 1.2;
-	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: $primary-white-color;
 

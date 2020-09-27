@@ -1,14 +1,16 @@
 @import "./utils/normalize";
 @import "./utils/fonts";
 @import "./utils/variables";
+@import "./utils/placeholder";
 
 @import "./base/common";
+@import "./components/container";
 
 @import "./components/logo";
-
+@import "./components/buttons";
 @import "./layouts/header";
-@import "./components/sitenav";
-@import "./components/headercontacts";
+@import "./components/site-nav";
+@import "./components/header-contacts";
 @import "./layouts/hero";
 @import "./layouts/features";
 @import "./layouts/work";
@@ -17,9 +19,9 @@
 @import "./layouts/project";
 @import "./components/filters";
 @import "./layouts/footer";
-@import "./components/footerlogo";
-@import "./components/footerform";
-@import "./components/footersocialicon";
+@import "./components/footer-logo";
+@import "./components/footer-form";
+@import "./components/footer-social-icon";
 @import "./components/modal";
-@import "./components/modalbtn";
-@import "./components/modalform";
+@import "./components/modal-btn";
+@import "./components/form";

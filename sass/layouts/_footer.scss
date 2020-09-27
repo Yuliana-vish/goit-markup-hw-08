@@ -16,12 +16,11 @@
 	color: $primary-white-color;
 	display: block;
 	margin: 0;
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
-	font-style: normal;
-	text-decoration: none;
 	margin-top: 20px;
+
+	@extend %text-style-normal;
+	line-height: 1.7;
+	text-decoration: none;
 
 	.contact-link {
 		margin-top: 9px;
@@ -37,17 +36,13 @@
 
 %placeholder-text {
 	font-family: $font-family;
-	font-weight: 700;
-	font-size: 14px;
+	@extend %text-style-bold;
 	line-height: 1.14;
-	color: #ffffff;
+	color: $primary-white-color
 	text-transform: uppercase;
 	margin: 0;
 	margin-bottom: 20px;
 }
-.invitation {
-	@extend %placeholder-text;
-}
-.sbr {
+.footer__text {
 	@extend %placeholder-text;
 }

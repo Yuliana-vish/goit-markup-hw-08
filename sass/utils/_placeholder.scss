@@ -1,0 +1,23 @@
+%display-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+%text-style-bold {
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+}
+
+%text-style-normal {
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+}
+
+%text-style-title {
+	color: $title-text-color;
+	font-weight: 700;
+	font-size: 36px;
+	letter-spacing: 0.03em;
+}
