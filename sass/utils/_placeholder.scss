@@ -20,19 +20,3 @@
 	font-size: 36px;
 	letter-spacing: 0.03em;
 }
-%button-border {
-	border-color: transparent;
-	border-radius: 4px;
-}
-%button-text {
-	font-family: $font-family;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.6;
-	letter-spacing: 0.03em;
-	text-align: center;
-}
-%button-color {
-	background: $accent-color;
-	color: $primary-white-color;
-}

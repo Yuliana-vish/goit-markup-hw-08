@@ -385,26 +385,6 @@ summary {
   color: #ffffff;
 }
 
-.hero__button-link, .footer__btn, .filter__button, .form__btn-submit {
-  border-color: transparent;
-  border-radius: 4px;
-}
-
-.footer__btn, .filter__button, .form__btn-submit {
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
-.hero__button-link, .footer__btn, .form__btn-submit, .filter__list .filter__button:hover,
-.filter__list .filter__button:focus {
-  background: #2196f3;
-  color: #ffffff;
-}
-
 /*hero*/
 .hero__button-link {
   display: block;
@@ -1054,6 +1034,7 @@ a {
   display: block;
   margin: 0;
   margin-top: 20px;
+  font-style: normal;
   line-height: 1.7;
   text-decoration: none;
 }
