@@ -31,17 +31,28 @@
 }
 /*footer*/
 .footer__btn {
-	position: absolute;
 	content: "";
 	width: 200px;
 	height: 50px;
 	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	@extend %button-text;
 	line-height: 1.9;
 	@extend %button-color;
 	@extend %button-border;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	transition: $transition;
+
+	@media screen and (max-width: 767px) {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	@media screen and (min-width: 1600px) {
+		position: absolute;
+	}
 }
 .footer__bth-icon {
 	width: 24px;
@@ -67,7 +78,9 @@
 
 /*modal-form*/
 .form__btn-submit {
-	@extend %display-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
 	width: 200px;
 	height: 50px;

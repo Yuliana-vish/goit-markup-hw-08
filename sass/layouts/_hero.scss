@@ -1,26 +1,37 @@
 .hero {
-	@extend %display-flex;
+	display: flex;
+	justify-content: center;
 	flex-direction: column;
-
-	max-width: 1600px;
-	height: 600px;
+	width: 100%;
+	height: 400px;
 	margin: 0 auto;
-
+	align-items: center;
 	background: #c4c4c4;
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/Img_hero.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+
+	@media screen and (min-width: 1600px) {
+		width: 1600px;
+		height: 600px;
+	}
 }
 .hero__title {
 	color: $primary-white-color;
 	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
-	letter-spacing: 0.06em;
+	font-size: 26px;
+	line-height: 1.6;
+	letter-spacing: 6%;
 
 	text-align: center;
 	text-transform: uppercase;
-	margin: 0;
+	margin: 0 auto;
 	margin-bottom: 30px;
+
+	@media screen and (min-width: 1600px) {
+		font-size: 44px;
+		line-height: 1.36;
+		letter-spacing: 0.06em;
+	}
 }

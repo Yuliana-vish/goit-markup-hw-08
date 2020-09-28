@@ -1,12 +1,18 @@
 .footer__social-icon-list {
-	@extend %display-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.footer__social-icon-item:not(:last-child) {
-	margin-right: 10px;
+.footer__social-icon-item {
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
 }
 .footer__social-link {
-	@extend %display-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	content: "";
 	width: 44px;
 	height: 44px;

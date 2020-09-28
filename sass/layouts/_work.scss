@@ -5,7 +5,10 @@
 .work__title {
 	margin: 0;
 	margin-bottom: 50px;
-	@extend %text-style-title;
+	color: $title-text-color;
+	font-weight: 700;
+	font-size: 36px;
+	letter-spacing: 0.03em;
 	line-height: 1.2;
 	text-align: center;
 }
@@ -39,7 +42,9 @@
 	}
 }
 .card__title {
-	@extend %display-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 0;
 	@extend %text-style-bold;
 	line-height: 1.2;

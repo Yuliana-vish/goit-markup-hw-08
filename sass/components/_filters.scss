@@ -1,9 +1,15 @@
 .filters {
-	@extend %display-flex;
+	@media screen and (min-width: 1600px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 .filter__list {
-	margin-right: 8px;
-	margin-bottom: 50px;
+	@media screen and (min-width: 1600px) {
+		margin-right: 8px;
+		margin-bottom: 50px;
+	}
 	transition: $transition;
 
 	&:last-child {
