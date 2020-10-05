@@ -3,34 +3,40 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 
-	@media screen and (min-width: 1600px) {
+	@include for-size(desktop) {
 		padding-top: 94px;
 		padding-bottom: 94px;
 	}
 }
 .features__title {
 	color: $title-text-color;
-	@extend %text-style-bold;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.03em;
 	line-height: 1.1;
 	text-transform: uppercase;
 	margin-bottom: 10px;
 	text-align: center;
 	margin-top: 30px;
 
-	@media screen and (min-width: 1600px) {
+	@include for-size(tablet) {
 		text-align: left;
 		margin-top: 0;
+	}
+	@include for-size(desktop) {
 	}
 }
 
 .features__list {
-	@media screen and (min-width: 768px) {
+	@include for-size(tablet) {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
 	.features__content {
-		@extend %text-style-bold;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: 0.03em;
 		line-height: 1.7;
 		color: $primary-text-color;
 		margin: 0;
@@ -41,20 +47,19 @@
 	display: block;
 	margin-bottom: 30px;
 
-	@media screen and (min-width: 768px) {
+	@include for-size(tablet) {
 		width: calc((100% - 30px) / 2);
 		margin-right: 30px;
-
 		&:nth-last-of-type(-n + 2) {
 			margin-bottom: 0;
 		}
-
 		&:nth-child(2n) {
 			margin-right: 0px;
 		}
 	}
 
-	@media screen and (min-width: 1600px) {
+	@include for-size(desktop) {
+		margin-bottom: 0;
 		width: calc((100% - 3 * 30px) / 4);
 		&:not(:last-child) {
 			margin-right: 30px;
@@ -72,15 +77,15 @@
 		background-repeat: no-repeat;
 		background-position: center;
 
-		@media screen and (min-width: 768px) {
+		@include for-size(tablet) {
 			height: 120px;
 			background-size: 354px;
 			margin-bottom: 30px;
 		}
 
-		@media screen and (min-width: 1600px) {
+		@include for-size(desktop) {
 			height: 120px;
-			background-size: 70px;
+			background-size: 270px;
 		}
 	}
 
@@ -95,9 +100,5 @@
 	}
 	&:nth-child(4)::before {
 		background-image: url(../images/icon/icon4.svg);
-	}
-
-	&:last-child {
-		margin-right: 0;
 	}
 }

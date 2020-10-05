@@ -1,8 +1,22 @@
 .page-head {
 	border-bottom: 1px solid #ececec;
+	position: relative;
+	width: 100%;
 
 	.container {
-		display: flex;
-		align-items: center;
+		height: 60px;
+		margin: 0 auto;
+	}
+
+	@include for-size(tablet) {
+		.container {
+			height: 80px;
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	@include for-size(desktop) {
+		font-size: 26px;
 	}
 }

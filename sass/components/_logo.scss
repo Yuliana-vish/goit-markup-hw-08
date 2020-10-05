@@ -2,16 +2,40 @@
 	font-family: Raleway;
 	color: $title-text-color;
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 24px;
 	line-height: 1.2;
 	text-decoration: none;
-	padding-top: 24px;
-	padding-bottom: 25px;
-	margin-right: 93px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+
+	@media screen and (max-width: 767px) {
+		margin: 0;
+	}
+	@include for-size(tablet) {
+		font-size: 24px;
+		margin-right: 88px;
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+	@include for-size(desktop) {
+		font-size: 26px;
+		//margin-right: 93px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
 }
 .logo__title {
 	color: $accent-color;
 	font-family: Raleway;
-	padding-top: 24px;
-	padding-bottom: 25px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+
+	@include for-size(tablet) {
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+	@include for-size(desktop) {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
 }

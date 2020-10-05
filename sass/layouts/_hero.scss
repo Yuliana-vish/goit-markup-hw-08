@@ -12,8 +12,13 @@
 	background-repeat: no-repeat;
 	background-position: center;
 
-	@media screen and (min-width: 1600px) {
-		width: 1600px;
+	@include for-size(tablet) {
+		width: 100%px;
+		height: 400px;
+	}
+
+	@include for-size(desktop) {
+		width: 100%px;
 		height: 600px;
 	}
 }
@@ -29,7 +34,7 @@
 	margin: 0 auto;
 	margin-bottom: 30px;
 
-	@media screen and (min-width: 1600px) {
+	@include for-size(desktop) {
 		font-size: 44px;
 		line-height: 1.36;
 		letter-spacing: 0.06em;

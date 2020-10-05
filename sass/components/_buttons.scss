@@ -44,13 +44,13 @@
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	transition: $transition;
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 1199px) {
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
 	}
 
-	@media screen and (min-width: 1600px) {
+	@include for-size(desktop) {
 		position: absolute;
 	}
 }
@@ -91,4 +91,44 @@
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 	transition: $transition;
+}
+.menu__btn {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	content: "";
+	top: 10px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+
+	@media screen and (max-width: 767px) {
+		display: inline-flex;
+		background-color: transparent;
+		border: none;
+
+		&.is-open .icon-cross {
+			display: none;
+		}
+
+		& .icon-menu {
+			display: none;
+		}
+		&.is-open .icon-menu {
+			display: block;
+		}
+	}
+	&:hover,
+	&:focus {
+		fill: $accent-color;
+	}
+
+	@include for-size(tablet) {
+		display: none;
+	}
+}
+.menu__btn-icons {
+	width: 20px;
+	height: 20px;
 }

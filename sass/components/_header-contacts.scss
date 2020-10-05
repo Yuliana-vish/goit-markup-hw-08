@@ -1,26 +1,79 @@
-%contacts-icon {
+.contacts {
+	display: block;
+	margin: 0 auto;
+	//align-items: center;
+	text-align: center;
+
+	@include for-size(tablet) {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		margin-left: 83px;
+		padding-top: 21px;
+		padding-bottom: 21px;
+	}
+	@include for-size(desktop) {
+		display: flex;
+		flex-direction: row;
+		margin-left: 305px;
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+}
+.contacts__item {
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+	color: $primary-text-color;
+	margin: 0;
+
+	&:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	@include for-size(tablet) {
+		font-size: 12px;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	@include for-size(desktop) {
+		font-size: 14px;
+		margin-bottom: 0;
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+}
+
+.contacts__mail-icon {
 	vertical-align: middle;
 	align-items: center;
 	fill: $primary-text-color;
 	transition: $transition;
-	margin-right: 10px;
-}
-.contacts__item {
-	@extend %text-style-normal;
-	line-height: 1.2;
-	color: $primary-text-color;
-}
-
-.contacts__mail-icon {
 	width: 16px;
 	height: 12px;
-	@extend %contacts-icon;
+
+	@include for-size(tablet) {
+		width: 14px;
+		height: 10px;
+		margin-right: 8px;
+	}
 }
 .contacts__phone-icon {
+	vertical-align: middle;
+	align-items: center;
+	fill: $primary-text-color;
+	transition: $transition;
 	width: 10px;
 	height: 16px;
-	@extend %contacts-icon;
-	margin-left: 30px;
+
+	@include for-size(tablet) {
+		width: 10px;
+		height: 14px;
+		margin-right: 8px;
+	}
 }
 .contacts__link {
 	color: $primary-text-color;

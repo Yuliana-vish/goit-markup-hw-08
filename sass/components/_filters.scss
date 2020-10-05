@@ -1,19 +1,28 @@
 .filters {
-	@media screen and (min-width: 1600px) {
+	@include for-size(tablet) {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 }
 .filter__list {
-	@media screen and (min-width: 1600px) {
-		margin-right: 8px;
-		margin-bottom: 50px;
-	}
+	margin: 0;
+	display: inline-block;
+	justify-content: start;
+	margin-right: 8px;
+	margin-bottom: 15px;
 	transition: $transition;
+	width: max-content;
 
-	&:last-child {
-		margin-right: 0;
+	@include for-size(tablet) {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	@include for-size(desktop) {
+		margin-bottom: 50px;
 	}
 
 	& .filter__button:hover,
