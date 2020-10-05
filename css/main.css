@@ -659,10 +659,12 @@ section {
 
 .menu__container.is-open {
   display: block;
+  border-top: 1px solid #ececec;
 }
 
 @media (min-width: 768px) {
   .menu__container {
+    height: 80px;
     font-size: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
