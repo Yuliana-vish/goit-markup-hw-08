@@ -113,7 +113,6 @@
 .form__checkbox-lable {
 	margin: 0 auto;
 	display: inline-block;
-
 	margin-top: 20px;
 	cursor: pointer;
 	font-size: 12px;
@@ -128,8 +127,11 @@
 }
 .form__agreement {
 	margin: 0;
-	margin-left: 22px;
+	margin-left: 30px;
 	color: $primary-text-color;
+	@include for-size(tablet) {
+		margin-left: 22px;
+	}
 }
 .form__agreement--link {
 	display: inline-block;

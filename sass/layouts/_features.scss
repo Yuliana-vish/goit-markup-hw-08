@@ -23,8 +23,6 @@
 		text-align: left;
 		margin-top: 0;
 	}
-	@include for-size(desktop) {
-	}
 }
 
 .features__list {
@@ -69,7 +67,6 @@
 	&::before {
 		display: block;
 		height: 120px;
-		background-size: 450px;
 		background: #f5f4fa;
 		border-radius: 4px;
 		margin-top: 0;
@@ -78,14 +75,7 @@
 		background-position: center;
 
 		@include for-size(tablet) {
-			height: 120px;
-			background-size: 354px;
 			margin-bottom: 30px;
-		}
-
-		@include for-size(desktop) {
-			height: 120px;
-			background-size: 270px;
 		}
 	}
 

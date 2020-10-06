@@ -664,6 +664,7 @@ section {
 
 @media (min-width: 768px) {
   .menu__container {
+    height: 80px;
     font-size: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -712,9 +713,6 @@ section {
   .menu__item {
     font-size: 18px;
   }
-  .menu__item:first-child {
-    padding-bottom: 8px;
-  }
   .menu__item:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -750,16 +748,28 @@ section {
   color: #2196f3;
 }
 
+.current {
+  color: #2196f3;
+  position: relative;
+  display: inline;
+  text-align: center;
+}
+
 .current::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
-  display: block;
+  bottom: -8px;
   width: 100%;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .current::after {
+    bottom: -32px;
+  }
 }
 
 .contacts {
@@ -909,17 +919,33 @@ section {
       -ms-flex-align: center;
           align-items: center;
   background: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img_hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/Img_hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/hero.webp), url(../images/mobile/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/mobile/hero.webp), url(../images/mobile/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/hero@2x.webp), url(../images/mobile/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/mobile/hero@2x.webp), url(../images/mobile/hero@2x.jpg);
+  }
 }
 
 @media (min-width: 768px) {
   .hero {
     width: 100%px;
     height: 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/hero.webp), url(../images/tablet/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/tablet/hero.webp), url(../images/tablet/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/hero@2x.webp), url(../images/tablet/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/tablet/hero@2x.webp), url(../images/tablet/hero@2x.jpg);
   }
 }
 
@@ -927,6 +953,15 @@ section {
   .hero {
     width: 100%px;
     height: 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/hero.webp), url(../images/desktop/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/desktop/hero.webp), url(../images/desktop/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/hero@2x.webp), url(../images/desktop/hero@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/desktop/hero@2x.webp), url(../images/desktop/hero@2x.jpg);
   }
 }
 
@@ -1032,7 +1067,6 @@ section {
 .features__item::before {
   display: block;
   height: 120px;
-  background-size: 450px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-top: 0;
@@ -1043,16 +1077,7 @@ section {
 
 @media (min-width: 768px) {
   .features__item::before {
-    height: 120px;
-    background-size: 354px;
     margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .features__item::before {
-    height: 120px;
-    background-size: 270px;
   }
 }
 
@@ -1215,6 +1240,10 @@ section {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__card img {
+  width: 100%;
+}
+
 @media screen and (max-width: 767px) {
   .team__card {
     margin: 0;
@@ -1249,10 +1278,9 @@ section {
   }
 }
 
-.team__img-card {
-  width: 100%;
-}
-
+/*.team__img-card {
+	width: 100%;
+}*/
 .team__name {
   margin: 0;
   margin-top: 30px;
@@ -1383,7 +1411,7 @@ section {
 }
 
 .users__card {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -1507,6 +1535,10 @@ section {
 
 .project__card:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.project__card img {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1976,7 +2008,7 @@ section {
 
 .modal {
   position: absolute;
-  width: 450px;
+  width: auto;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1990,10 +2022,15 @@ section {
   padding: 0px 40px 40px 40px;
 }
 
+@media (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
 @media (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
   }
 }
 
@@ -2200,8 +2237,14 @@ section {
 
 .form__agreement {
   margin: 0;
-  margin-left: 22px;
+  margin-left: 30px;
   color: #757575;
+}
+
+@media (min-width: 768px) {
+  .form__agreement {
+    margin-left: 22px;
+  }
 }
 
 .form__agreement--link {
