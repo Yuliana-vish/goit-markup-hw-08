@@ -108,17 +108,55 @@
 					<h2 class="work__title">Чем мы занимаемся</h2>
 					<ul class="work__card">
 						<li class="work__img thumb">
-							<img src="./images/img1.png" alt="Десктопные приложения" width="370" />
+							<picture>
+								<source
+									srcset="
+										./images/desktop/desktop.webp    1x,
+										./images/desktop/desktop_2x.webp 2x,
+										./images/desktop/desktop.jpg     1x,
+										./images/desktop/desktop@2x.jpg  2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+								/>
+								<img src="./images/desktop/desctop.jpg" alt="Десктопные приложения" width="370" />
+							</picture>
 							<div class="img-title">
 								<p>Десктопные приложения</p>
 							</div>
 						</li>
 						<li class="work__img thumb">
-							<img src="./images/img2.jpg" alt="мобильные приложения" width="370" />
+							<picture>
+								<source
+									srcset="
+										./images/desktop/mobile.webp    1x,
+										./images/desktop/mobile_2x.webp 2x,
+										./images/desktop/mobile.jpg     1x,
+										./images/desktop/mobile@2x.jpg  2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+								/>
+								<img src="./images/desktop/mobile.jpg" alt="мобильные приложения" width="370" />
+							</picture>
+
 							<div class="img-title"><p>Мобильные приложения</p></div>
 						</li>
 						<li class="work__img thumb">
-							<img src="./images/img3.png" alt="веб-дизайн" width="370" />
+							<picture>
+								<source
+									srcset="
+										./images/desktop/design.webp    1x,
+										./images/desktop/design_2x.webp 2x,
+										./images/desktop/design.jpg     1x,
+										./images/desktop/design@2x.jpg  2x
+									"
+									type="image/webp"
+									media="(min-width: 1200px)"
+								/>
+								<img src="./images/desktop/design.jpg" alt="дизайнерские решения" width="370" />
+							</picture>
+
 							<div class="img-title"><p>Дизайнерские решения</p></div>
 						</li>
 					</ul>
@@ -130,22 +168,16 @@
 					<h2 class="team__list-title">Наша команда</h2>
 					<ul class="team__list">
 						<li class="team__card">
-							<!--<img
-								class="team__img-card"
-								src="./images/prdesinger.jpg"
-								alt="фотопортрет Игорь Демьяненко"
-								width="270"
-							/>-->
 							<picture>
 								<source
 									srcset="
-										./images/mobile/igor.webp    1x,
-										./images/mobile/igor_2x.webp 2x,
-										./images/mobile/igor.jpg     1x,
-										./images/mobile/igor@2x.jpg  2x
+										./images/desktop/igor.webp    1x,
+										./images/desktop/igor_2x.webp 2x,
+										./images/desktop/igor.jpg     1x,
+										./images/desktop/igor@2x.jpg  2x
 									"
 									type="image/webp"
-									media="(max-width: 767px)"
+									media="(min-width: 1200px)"
 								/>
 								<source
 									srcset="
@@ -159,15 +191,15 @@
 								/>
 								<source
 									srcset="
-										./images/desktop/igor.webp    1x,
-										./images/desktop/igor_2x.webp 2x,
-										./images/desktop/igor.jpg     1x,
-										./images/desktop/igor@2x.jpg  2x
+										./images/mobile/igor.webp    1x,
+										./images/mobile/igor_2x.webp 2x,
+										./images/mobile/igor.jpg     1x,
+										./images/mobile/igor@2x.jpg  2x
 									"
 									type="image/webp"
-									media="(min-width: 1200px)"
+									media="(max-width: 767px)"
 								/>
-								<img src="./images/desktop/igor.jpg" alt="Igor" />
+								<img src="./images/desktop/igor.jpg" alt="Игорь Демьяненко" />
 							</picture>
 							<h3 class="team__name">Игорь Демьяненко</h3>
 							<p class="team__profession">Product Designer</p>
@@ -206,13 +238,13 @@
 							<picture>
 								<source
 									srcset="
-										./images/mobile/olga.webp    1x,
-										./images/mobile/olga_2x.webp 2x,
-										./images/mobile/olga.jpg     1x,
-										./images/mobile/olga@2x.jpg  2x
+										./images/desktop/olga.webp    1x,
+										./images/desktop/olga_2x.webp 2x,
+										./images/desktop/olga.jpg     1x,
+										./images/desktop/olga@2x.jpg  2x
 									"
 									type="image/webp"
-									media="(max-width: 767px)"
+									media="(min-width: 1200px)"
 								/>
 								<source
 									srcset="
@@ -226,15 +258,16 @@
 								/>
 								<source
 									srcset="
-										./images/desktop/olga.webp    1x,
-										./images/desktop/olga_2x.webp 2x,
-										./images/desktop/olga.jpg     1x,
-										./images/desktop/olga@2x.jpg  2x
+										./images/mobile/olga.webp    1x,
+										./images/mobile/olga_2x.webp 2x,
+										./images/mobile/olga.jpg     1x,
+										./images/mobile/olga@2x.jpg  2x
 									"
 									type="image/webp"
-									media="(min-width: 1200px)"
+									media="(max-width: 767px)"
 								/>
-								<img src="./images/desktop/olga.jpg" alt="olga" />
+
+								<img src="./images/desktop/olga.jpg" alt="Ольга Репина" />
 							</picture>
 
 							<h3 class="team__name">Ольга Репина</h3>
@@ -274,13 +307,13 @@
 							<picture>
 								<source
 									srcset="
-										./images/mobile/nikolay.webp    1x,
-										./images/mobile/nikolay_2x.webp 2x,
-										./images/mobile/nikolay.jpg     1x,
-										./images/mobile/nikolay@2x.jpg  2x
+										./images/desktop/nikolay.webp    1x,
+										./images/desktop/nikolay_2x.webp 2x,
+										./images/desktop/nikolay.jpg     1x,
+										./images/desktop/nikolay@2x.jpg  2x
 									"
 									type="image/webp"
-									media="(max-width: 767px)"
+									media="(min-width: 1200px)"
 								/>
 								<source
 									srcset="
@@ -294,15 +327,15 @@
 								/>
 								<source
 									srcset="
-										./images/desktop/nikolay.webp    1x,
-										./images/desktop/nikolay_2x.webp 2x,
-										./images/desktop/nikolay.jpg     1x,
-										./images/desktop/nikolay@2x.jpg  2x
+										./images/mobile/nikolay.webp    1x,
+										./images/mobile/nikolay_2x.webp 2x,
+										./images/mobile/nikolay.jpg     1x,
+										./images/mobile/nikolay@2x.jpg  2x
 									"
 									type="image/webp"
-									media="(min-width: 1200px)"
+									media="(max-width: 767px)"
 								/>
-								<img src="./images/desktop/nikolay.jpg" alt="nikolay" />
+								<img src="./images/desktop/nikolay.jpg" alt="Николай Тарасов" />
 							</picture>
 
 							<h3 class="team__name">Николай Тарасов</h3>
@@ -342,13 +375,13 @@
 							<picture>
 								<source
 									srcset="
-										./images/mobile/mikhail.webp    1x,
-										./images/mobile/mikhail_2x.webp 2x,
-										./images/mobile/mikhail.jpg     1x,
-										./images/mobile/mikhail@2x.jpg  2x
+										./images/desktop/mikhail.webp    1x,
+										./images/desktop/mikhail_2x.webp 2x,
+										./images/desktop/mikhail.jpg     1x,
+										./images/desktop/mikhail@2x.jpg  2x
 									"
 									type="image/webp"
-									media="(max-width: 767px)"
+									media="(min-width: 1200px)"
 								/>
 								<source
 									srcset="
@@ -362,17 +395,16 @@
 								/>
 								<source
 									srcset="
-										./images/desktop/mikhail.webp    1x,
-										./images/desktop/mikhail_2x.webp 2x,
-										./images/desktop/mikhail.jpg     1x,
-										./images/desktop/mikhail@2x.jpg  2x
+										./images/mobile/mikhail.webp    1x,
+										./images/mobile/mikhail_2x.webp 2x,
+										./images/mobile/mikhail.jpg     1x,
+										./images/mobile/mikhail@2x.jpg  2x
 									"
 									type="image/webp"
-									media="(min-width: 1200px)"
+									media="(max-width: 767px)"
 								/>
-								<img src="./images/desktop/mikhail.jpg" alt="mikhail" />
+								<img src="./images/desktop/mikhail.jpg" alt="Михаил Ермаков" />
 							</picture>
-
 							<h3 class="team__name">Михаил Ермаков</h3>
 							<p class="team__profession">UI Designer</p>
 							<ul class="team__social-icon-list">
