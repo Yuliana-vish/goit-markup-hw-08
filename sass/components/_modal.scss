@@ -20,7 +20,6 @@
 }
 .modal {
 	position: absolute;
-	width: auto;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -30,10 +29,14 @@
 	opacity: 1;
 	cursor: pointer;
 
-	padding: 0px 40px 40px 40px;
+	@media screen and (max-width: 479px) {
+		max-width: 300px;
+		padding: 0px 15px 15px 15px;
+	}
 
 	@include for-size(mobile) {
 		width: 450px;
+		padding: 0px 40px 40px 40px;
 	}
 
 	@include for-size(desktop) {
