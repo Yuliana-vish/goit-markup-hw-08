@@ -114,29 +114,32 @@
 	width: 100%;
 }
 .overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	position: absolute;
 	background: rgba(33, 150, 243, 0.9);
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: 77px 24px;
+	padding: 20px 24px;
 	transform: translatey(100%);
 	transition: $transition;
 
 	& > p {
-		margin: 0;
-
 		color: $primary-white-color;
-		font-size: 18px;
+		font-size: 12px;
 		line-height: 1.56;
 		letter-spacing: 0.03em;
-	}
+		margin: 0 auto;
 
-	@include for-size(tablet) {
-		padding: 49px 24px;
-	}
-	@include for-size(tablet) {
-		padding: 63px 24px;
+		@media screen and (min-width: 300px) {
+			font-size: 16px;
+		}
+
+		@media screen and (min-width: 480px) {
+			font-size: 18px;
+		}
 	}
 }
